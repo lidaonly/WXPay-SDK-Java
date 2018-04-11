@@ -97,6 +97,22 @@ public class MyConfig implements WXPayConfig{
         return "88888888888888888888888888888888";
     }
 
+     public String getTradeType() {
+        return "NATIVE ";
+    }
+
+    public String getSignType() {
+        return "MD5";
+    }
+
+    public String getNotifyUrl() {
+        return "http://www.example.com/notifyurl";
+    }
+
+    public String getPartnerId() {
+        return"wx8888888888888888";
+    }
+
     public InputStream getCertStream() {
         ByteArrayInputStream certBis = new ByteArrayInputStream(this.certData);
         return certBis;
